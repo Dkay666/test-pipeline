@@ -1,5 +1,9 @@
 pipeline { 
     agent any 
+    tools{
+        maven 'LOCALMAVEN'
+        jdk 'LOCAL_JDK'
+    }
     stages {
         stage('clean') { 
             steps { 
